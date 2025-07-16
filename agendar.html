@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Agendar Visita</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+ <body class="agendar-screen">
+
+  <button class="voltar-btn esquerda" onclick="window.location.href='dashboard.html'">
+  <i class="fas fa-arrow-left"></i>
+</button>
+
+  <div class="mapa-fake"></div>
+
+  <!-- Container principal -->
+  <div class="agendar-container">
+    <div class="barra-deslizante"></div>
+    <h2>Agendar Visita</h2>
+
+    <form class="form-agendar">
+      <label for="logradouro">Logradouro</label>
+      <input type="text" id="logradouro" placeholder="Logradouro" />
+
+      <div class="dupla">
+        <div>
+          <label for="numero">Número</label>
+          <input type="text" id="numero" placeholder="Número" />
+        </div>
+        <div>
+          <label for="cep">CEP</label>
+          <input type="text" id="cep" placeholder="CEP" />
+        </div>
+      </div>
+
+      <label for="data">Data</label>
+      <input type="text" id="data" placeholder="DD/MM/AAAA" />
+
+      <label for="horario">Horário</label>
+      <input type="text" id="horario" placeholder="HH:MM" />
+
+      <button type="submit" class="btn-confirmar-agendamento">Agendar Visita</button>
+    </form>
+  </div>
+
+  <script src="js/agendar.js"></script>
+</body>
+</html>

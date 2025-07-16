@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="login-screen">
+  <div class="background-img"></div>
+
+  <main class="login-wrapper">
+    <div class="welcome-text">
+      <h1>Olá!</h1>
+      <p>bem vindo de volta ;)</p>
+    </div>
+
+    <section class="login-box">
+      <h2>Faça login</h2>
+      <form id="loginForm">
+        <label for="user">Email ou CPF</label>
+        <input type="text" id="user" placeholder="user@email.com" required />
+
+        <label for="password">Senha</label>
+        <input type="password" id="password" placeholder="12345senha" required />
+
+        <button type="submit">Entrar</button>
+      </form>
+      <p class="register-text">Não possui conta? <a href="register.html">Registre-se</a></p>
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
