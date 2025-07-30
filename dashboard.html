@@ -1,60 +1,87 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Dashboard</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/style.css" />
 
- <!-- Font Awesome (sem integrity) -->
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-/>
-
-</head>
-<body class="dashboard-screen">
-  <header class="dashboard-header">
-    <div class="user-info">
-      <div class="profile-icon"><i class="fas fa-user"></i></div>
-      <div>
-        <p>Bem vindo,</p>
-        <strong id="username">Usuário!</strong>
+    <!-- Font Awesome (sem integrity) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body class="dashboard-screen">
+    <header class="dashboard-header">
+      <div class="user-info">
+        <div class="profile-icon"><i class="fas fa-user"></i></div>
+        <div>
+          <p>Bem vindo,</p>
+          <strong id="username">Usuário!</strong>
+        </div>
       </div>
-    </div>
-    <button class="history-btn"><i class="fas fa-clock-rotate-left"></i> Histórico</button>
-  </header>
+      <button class="history-btn">
+        <i class="fas fa-clock-rotate-left"></i> Histórico
+      </button>
+    </header>
 
-  <main class="dashboard-main">
-    <div class="saldo-container">
-      <p>Seu Saldo</p>
-      <h2 id="saldo">R$ 0,00</h2>
-    </div>
+    <main class="dashboard-main">
+      <div class="saldo-container">
+        <p>Seu Saldo</p>
+        <h2 id="saldo">R$ 0,00</h2>
+      </div>
 
-    <div class="btns-topo">
-      <button class="btn-loja"><i class="fas fa-store"></i> Loja</button>
-      <button class="btn-agendar-dashboard" onclick="window.location.href='agendar.html'">
-  <i class="fas fa-truck"></i> Agendar Visita
-</button>
-    </div>
+      <div class="btns-topo">
+        <button class="btn-loja" onclick="window.location.href='shop.html'">
+          <i class="fas fa-store"></i> Loja
+        </button>
+        <button
+          class="btn-agendar-dashboard"
+          onclick="window.location.href='agendar.html'"
+        >
+          <i class="fas fa-truck"></i> Agendar Visita
+        </button>
+      </div>
 
-    <div class="img-banner">
-      <img src="../project/img/banner-placeholder.jpg" alt="Imagem destaque"/>
-    </div>
+      <div class="img-banner">
+        <img
+          src="../project/img/banner-placeholder.jpg"
+          alt="Imagem destaque"
+        />
+      </div>
 
-    <div class="action-cards">
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-    </div>
-  </main>
+      <div class="action-cards">
+        <div class="oferta-item">
+          <div class="offer-title">
+            <h4>Saldão de brinquedos</h4>
+            <h3 class="titleLime">15% off</h3>
+          </div>
+          <img src="./img/Brinquedos.png" alt="Brinquedos em promoção" />
+        </div>
+        <div class="oferta-item">
+          <div class="offer-title">
+            <h4>Saldão de brinquedos</h4>
+            <h3 class="titleLime">15% off</h3>
+          </div>
+          <img src="./img/Brinquedos.png" alt="Brinquedos em promoção" />
+        </div>
+        <div class="oferta-item">
+          <div class="offer-title">
+            <h4>Saldão de brinquedos</h4>
+            <h3 class="titleLime">15% off</h3>
+          </div>
+          <img src="./img/Brinquedos.png" alt="Brinquedos em promoção" />
+        </div>
+      </div>
+    </main>
 
-  <nav class="bottom-nav">
-    <button title="Início"><i class="fas fa-home"></i></button>
-    <button title="Agendar"><i class="fas fa-truck"></i></button>
-    <button title="Loja"><i class="fas fa-store"></i></button>
-  </nav>
+    <nav class="bottom-nav">
+      <button title="Início"><i class="fas fa-home"></i></button>
+      <button title="Agendar"><i class="fas fa-truck"></i></button>
+      <button title="Loja"><i class="fas fa-store"></i></button>
+    </nav>
 
-  <script src="js/dashboard.js"></script>
-</body>
+    <script src="js/dashboard.js"></script>
+  </body>
 </html>
